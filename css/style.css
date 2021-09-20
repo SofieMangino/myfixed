@@ -1,14 +1,15 @@
 /*--Remember the cascade: Later styles override earlier ones and more specific styles override more general ones.--*/
 body {
-  color: #444;
+  color: #111539;
   font-size: 16px;
   font-family: 'Gentium Book Basic', serif;
+  background-color: #ececec
 }
 p {
   margin-bottom: .67em;
 }
 nav, footer {
-  background-color: #444;
+  background-color: #2c3365;
 }
 footer {
   text-align: center;
@@ -37,6 +38,7 @@ nav a.active {
 header {
   width: 510px;
   margin: 2em auto;
+  background-color: #97a1d9
 }
 header img {
   width: 100%;
@@ -65,19 +67,26 @@ article {
 article figure {
   width: 39%;
   margin: 0 0 1.25em 1.25em;
+  float: right;
 }
 article figcaption {
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
 }
 .pagination {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 0 auto;
+  margin-bottom: 0 auto;
   width: 96%;
+  display: flex;
+  justify-content: space-evenly;
+
+
 }
 a.button {
   border: 1px solid #888;
   padding: .4em 1em .4em 1em;
   text-decoration: none;
-  color: #888;
+  color: #4a5596;
   border-radius: 200px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -86,7 +95,7 @@ a.button {
 a.button:hover, a.button:active {
   border: 1px solid #444;
   text-decoration: none;
-  color: #222;
+  color: #111539;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
